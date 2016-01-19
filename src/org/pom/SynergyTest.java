@@ -15,26 +15,29 @@ public class SynergyTest {
 
     public static void main(String[] args) {
 
+        //Заходим на ресурс
         driver.get("http://demo.arta.kz/");
 
+        //создаем объект страницы для работы с её компонентами
         SynergyPageObjects pageSynergy = new SynergyPageObjects(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+        //Осуществляем Логин с паролем и логином 111111
         pageSynergy.LoginSynergy();
 
+        //Ждем пока страница загрузится
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+        //Нажимаем кнопку создания проекта
         pageSynergy.btnCreateProject.click();
-
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+        //Заполняем необходимые поля, Work Statement и Assignee
         pageSynergy.CreateProject();
-
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+        //Создаем проект
         pageSynergy.btnCreate.click();
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 //        driver.quit();
     }

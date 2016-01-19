@@ -17,7 +17,6 @@ public class SynergyPageObjects {
     @FindBy(xpath = ".//*[@id='synergy_div']/div/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr/td/div")
     public WebElement btnCreateProject;
 
-
     @FindBy(xpath = ".//*[@id='login']")
     public WebElement txtLogin;
 
@@ -30,10 +29,6 @@ public class SynergyPageObjects {
     @FindBy(xpath = "html/body/div[14]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/div[1]/table[1]/tbody/tr[2]/td/textarea")
     public WebElement workStatement;
 
-
-    @FindBy(xpath = "html/body/div[14]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/div[1]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/div/div")
-    public WebElement Assignee;
-
     @FindBy(xpath = "html/body/div[14]/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/div/div/div[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td/div")
     public WebElement btnCreate;
 
@@ -45,7 +40,6 @@ public class SynergyPageObjects {
 
     @FindBy(xpath = "html/body/div[14]/div/table/tbody/tr[2]/td/table/tbody/tr[1]/td/div/div/div[1]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/table/tbody/tr/td/img")
     public WebElement executorChoose;
-
 
 
     public void LoginSynergy(){
