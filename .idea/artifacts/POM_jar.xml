@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="POM:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/POM_jar</output-path>
+    <root id="archive" name="POM.jar">
+      <element id="module-output" name="POM" />
+    </root>
+  </artifact>
+</component>
